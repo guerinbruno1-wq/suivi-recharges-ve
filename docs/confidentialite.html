@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Règles de confidentialité — Suivi Recharges VE</title>
+<style>
+  :root { --nuit:#0E1726; --encre:#14213D; --doux:#4A5568; --clair:#F5F7FB; --vert:#22C58B; --bleu:#4C8DFF; }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; background: var(--clair); color: var(--encre); line-height: 1.6; }
+  header { background: linear-gradient(135deg, #0E1726 0%, #1B2A4A 100%); color: #EEF2F8; padding: 48px 16px; }
+  header div, main { max-width: 820px; margin: 0 auto; }
+  h1 { margin: 0 0 8px; font-size: 2rem; }
+  header p { margin: 0; color: #B7C3D6; }
+  main { padding: 32px 16px 64px; }
+  h2 { margin-top: 2rem; font-size: 1.25rem; border-left: 6px solid var(--vert); padding-left: 12px; }
+  a { color: #1F5FD1; }
+  .carte { background: #FCFDFF; border-radius: 16px; padding: 20px 24px; box-shadow: 0 8px 28px rgba(20,33,61,.08); }
+  @media (prefers-color-scheme: dark) {
+    body { background: #101828; color: #EEF2F8; }
+    .carte { background: #1B2A4A; box-shadow: none; }
+    a { color: #8DB6FF; }
+  }
+</style>
+</head>
+<body>
+<header><div>
+<h1>Règles de confidentialité</h1>
+<p>Application « Suivi Recharges VE » (Android et Windows) — en vigueur au 16 novembre 2026</p>
+</div></header>
+<main>
+<div class="carte">
+<p><b>En résumé :</b> l’application ne collecte aucune donnée personnelle. Tout ce que vous saisissez reste sur votre appareil. Il n’y a ni compte, ni publicité, ni statistiques d’usage, ni partage avec des tiers.</p>
+</div>
+
+<h2>1. Données enregistrées sur votre appareil</h2>
+<p>L’application enregistre <b>uniquement sur votre appareil</b> (téléphone ou PC) : vos recharges (dates, kilométrage, % de batterie, kWh, coûts, notes), vos véhicules et leur photo, vos réglages (tarifs, horaires) et, si vous les configurez, les codes d’accès à votre borne et à votre voiture. Ces données ne sont envoyées ni à l’auteur de l’application, ni à un serveur de l’application : il n’en existe pas.</p>
+
+<h2>2. Connexions facultatives à des services tiers</h2>
+<p>Uniquement si vous les configurez vous-même, l’application contacte directement :</p>
+<ul>
+<li><b>Netatmo</b> (service de la borne Legrand Green’Up Home), pour lire les kWh et la durée de charge de votre borne, avec l’autorisation que vous accordez sur la page officielle de Netatmo ;</li>
+<li><b>Pleos Vehicle Data API</b> (Hyundai, Kia, Genesis), pour lire le kilométrage et le % de batterie de votre voiture, avec la clé que vous obtenez sur le site officiel du constructeur.</li>
+</ul>
+<p>Ces échanges ont lieu directement entre votre appareil et ces services, de façon chiffrée (HTTPS). Leur traitement relève des règles de confidentialité de Netatmo et du constructeur de votre véhicule. Vous pouvez les désactiver à tout moment en effaçant les codes dans Réglages ou en révoquant l’accès sur le site du service.</p>
+
+<h2>3. Fichiers que vous exportez</h2>
+<p>L’export CSV crée un fichier à l’endroit que vous choisissez. Son contenu reste sous votre contrôle.</p>
+
+<h2>4. Autorisations de l’application</h2>
+<p>Sur Android, l’application demande uniquement l’accès à Internet, pour les connexions facultatives ci-dessus. Le choix d’une photo passe par le sélecteur du système : l’application n’accède qu’à la photo que vous choisissez.</p>
+
+<h2>5. Conservation et suppression</h2>
+<p>Les données restent sur l’appareil tant que l’application est installée. Vous pouvez supprimer une recharge ou un véhicule dans l’application. Désinstaller l’application supprime toutes ses données de l’appareil.</p>
+
+<h2>6. Enfants</h2>
+<p>L’application ne s’adresse pas spécifiquement aux enfants et ne collecte aucune donnée.</p>
+
+<h2>7. Contact</h2>
+<p>Pour toute question : ouvrez un ticket sur <a href="https://github.com/guerinbruno1-wq/suivi-recharges-ve/issues">la page Issues du projet</a>.</p>
+
+<h2>8. Modifications</h2>
+<p>En cas de modification de ces règles, la nouvelle version est publiée sur cette page avec sa date d’entrée en vigueur.</p>
+</main>
+</body>
+</html>

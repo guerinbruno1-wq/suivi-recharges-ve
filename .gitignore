@@ -1,0 +1,4 @@
+# Les fichiers de l'application sont publiés dans « Releases », pas dans le dépôt
+*.apk
+*.msi
+*.exe
