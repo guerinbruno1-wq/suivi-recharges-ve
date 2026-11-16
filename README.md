@@ -15,6 +15,18 @@ Application gratuite pour <b>Android</b> et <b>Windows 11</b>, en français, san
 <a href="MODE_EMPLOI.md"><img alt="Mode d’emploi" src="https://img.shields.io/badge/Lire-Mode%20d’emploi-9B7BFF?style=for-the-badge"></a>
 </p>
 
+<p align="center">
+<img alt="Visites de la page" src="https://hitscounter.dev/api/hit?url=https%3A%2F%2Fgithub.com%2Fguerinbruno1-wq%2Fsuivi-recharges-ve&label=Visites&icon=eye-fill&color=%230d6efd&tz=Europe%2FParis">
+&nbsp;
+<a href="https://github.com/guerinbruno1-wq/suivi-recharges-ve/releases"><img alt="Téléchargements, toutes versions" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fguerinbruno1-wq%2Fsuivi-recharges-ve%2Fstats%2Fstats.json&query=%24.total&label=T%C3%A9l%C3%A9chargements&color=0E1726&cacheSeconds=3600"></a>
+&nbsp;
+<a href="https://github.com/guerinbruno1-wq/suivi-recharges-ve/releases"><img alt="Téléchargements Android, toutes versions" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fguerinbruno1-wq%2Fsuivi-recharges-ve%2Fstats%2Fstats.json&query=%24.android&label=Android&color=22C58B&logo=android&logoColor=white&cacheSeconds=3600"></a>
+&nbsp;
+<a href="https://github.com/guerinbruno1-wq/suivi-recharges-ve/releases"><img alt="Téléchargements Windows, toutes versions" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fguerinbruno1-wq%2Fsuivi-recharges-ve%2Fstats%2Fstats.json&query=%24.windows&label=Windows&color=4C8DFF&cacheSeconds=3600"></a>
+&nbsp;
+<a href="https://github.com/guerinbruno1-wq/suivi-recharges-ve/releases"><img alt="Téléchargements du mode d’emploi, toutes versions" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fguerinbruno1-wq%2Fsuivi-recharges-ve%2Fstats%2Fstats.json&query=%24.mode_emploi&label=Mode%20d%E2%80%99emploi&color=9B7BFF&cacheSeconds=3600"></a>
+</p>
+
 ---
 
 ## ✨ Ce que fait l’application
