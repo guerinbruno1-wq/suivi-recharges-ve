@@ -1,0 +1,62 @@
+# Recopie chaque version publiée dans le dépôt privé de développement vers ce dépôt public
+# (APK Android, installeur Windows .msi et mode d'emploi PDF), avec ses notes du CHANGELOG.
+# Ne copie que les fichiers d'installation : ni le code source, ni la clé de signature.
+# Besoin : un secret SOURCE_TOKEN (jeton GitHub en lecture seule sur le dépôt privé).
+name: Publier les versions
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 5 * * *"
+  push:
+    branches: [main]
+    paths: [".github/workflows/publier-versions.yml", "CHANGELOG.md"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publier-versions
+  cancel-in-progress: false
+
+jobs:
+  publier:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Copier les nouvelles versions
+        env:
+          SOURCE_TOKEN: ${{ secrets.SOURCE_TOKEN }}
+          GH_TOKEN: ${{ github.token }}
+          SOURCE: guerinbruno1-wq/recharge-ioniq-5
+        run: |
+          set -euo pipefail
+          if [ -z "${SOURCE_TOKEN}" ]; then
+            echo "::error::Le secret SOURCE_TOKEN est manquant (Settings → Secrets and variables → Actions)."
+            exit 1
+          fi
+          tags=$(GH_TOKEN="$SOURCE_TOKEN" gh api "repos/$SOURCE/releases" --paginate --jq '.[].tag_name' | sort -V)
+          existants=$(gh release list --limit 300 --json tagName --jq '.[].tagName' || true)
+          for t in $tags; do
+            if printf '%s\n' "$existants" | grep -qx "$t"; then echo "$t : déjà publiée"; continue; fi
+            v="${t#version-}"
+            echo "::group::Publication de la version $v"
+            rm -rf dl && mkdir dl
+            GH_TOKEN="$SOURCE_TOKEN" gh release download "$t" --repo "$SOURCE" --dir dl --pattern "*.apk" --pattern "*.msi"
+            fichiers=()
+            for f in dl/*.apk; do [ -e "$f" ] && cp "$f" SuiviRechargesVE-Android.apk && fichiers+=(SuiviRechargesVE-Android.apk); done
+            for f in dl/*.msi; do [ -e "$f" ] && cp "$f" SuiviRechargesVE-Windows.msi && fichiers+=(SuiviRechargesVE-Windows.msi); done
+            fichiers+=(Mode-emploi-Suivi-Recharges-VE.pdf)
+            {
+              awk -v v="$v" '$0 ~ "^## "v"( |$)" {f=1; next} /^## / {f=0} f' CHANGELOG.md
+              echo
+              echo "**Installation**"
+              echo "- Android : \`SuiviRechargesVE-Android.apk\` (s'installe par-dessus la version précédente)"
+              if [ -e SuiviRechargesVE-Windows.msi ]; then echo "- Windows 11 : \`SuiviRechargesVE-Windows.msi\` (remplace la version précédente, données conservées)"; fi
+              echo "- Mode d'emploi : \`Mode-emploi-Suivi-Recharges-VE.pdf\`"
+            } > notes.md
+            gh release create "$t" "${fichiers[@]}" --title "Version $v" --notes-file notes.md --target main
+            rm -f SuiviRechargesVE-Android.apk SuiviRechargesVE-Windows.msi
+            echo "::endgroup::"
+          done
