@@ -149,7 +149,23 @@ La consommation est calculée entre deux recharges : (% de fin de la précédent
 
 - **Plusieurs véhicules** : touchez le **nom du véhicule** en haut de l’écran pour en changer ou en ajouter un. Chacun a ses recharges, sa capacité et ses statistiques. Gestion complète dans Réglages → Véhicules.
 - **Votre photo** : sur l’écran Recharges, l’icône **appareil photo** du bandeau remplace l’illustration par la photo de votre voiture.
-- **Téléphone ↔ PC** : Réglages → **« Exporter en CSV »** sur un appareil, **« Importer un CSV »** sur l’autre. Les recharges déjà présentes ne sont pas dupliquées. Le fichier s’ouvre aussi dans Excel.
+
+### 🔄 Synchroniser le téléphone et le PC automatiquement
+
+Les recharges, véhicules et tarifs passent tout seuls d’un appareil à l’autre grâce à **un fichier placé dans votre cloud** (kDrive, OneDrive…). Il faut que l’application du cloud soit installée sur le PC (dossier synchronisé) et sur le téléphone.
+
+1. **Sur le PC** : Réglages → **Synchronisation téléphone ↔ PC** → **« Créer le fichier »**. Choisissez un dossier de votre cloud, par exemple `kDrive\auto`, et gardez le nom `suivi-recharges-ve.json`.
+2. Attendez quelques secondes que le cloud envoie le fichier.
+3. **Sur le téléphone** : Réglages → **Synchronisation téléphone ↔ PC** → **« Choisir le fichier existant »**. Dans le sélecteur, ouvrez le menu ☰ → **kDrive** (ou votre cloud) → dossier `auto` → `suivi-recharges-ve.json`.
+
+Ensuite, tout est automatique : à l’ouverture de l’application, quelques secondes après chaque modification et toutes les quelques minutes. Le bouton **« Synchroniser maintenant »** force un échange ; la date de la dernière synchronisation est affichée.
+
+- Si les deux appareils avaient déjà les mêmes recharges (import CSV), elles sont **reconnues et pas dupliquées**.
+- Une recharge supprimée sur un appareil est supprimée sur l’autre.
+- Les **codes d’accès à la voiture et à la borne ne sont pas partagés** : configurez-les sur chaque appareil.
+- Sur Android, si la synchronisation tarde, retirez l’application du cloud de l’**optimisation de la batterie**.
+
+L’**export / import CSV** (Réglages) reste disponible, par exemple pour ouvrir ses recharges dans Excel.
 
 ---
 
@@ -158,14 +174,14 @@ La consommation est calculée entre deux recharges : (% de fin de la précédent
 1. **Remplissez depuis la borne avant la charge suivante** : la borne ne garde que la dernière session.
 2. **Attendez une à deux minutes après la charge** avant de lire la voiture : elle envoie ses données en se mettant en veille (l’heure des données est affichée).
 3. **Indiquez l’heure de début réelle** (23:00 si la charge est programmée en heures creuses) : la répartition HC / HP en dépend.
-4. **Configurez chaque appareil** : une autorisation de la borne par appareil ; la même clé voiture sur chacun.
+4. **Configurez chaque appareil** : une autorisation de la borne par appareil ; la même clé voiture sur chacun ; le même fichier de synchronisation.
 
 ---
 
 ## 10. Questions fréquentes
 
 **Mes données sont-elles envoyées quelque part ?**
-Non. Tout reste sur votre appareil. Seules les demandes de lecture partent vers la borne (Netatmo) et la voiture (Hyundai / Kia / Genesis), et seulement quand vous les configurez. Voir les [règles de confidentialité](https://guerinbruno1-wq.github.io/suivi-recharges-ve/confidentialite.html).
+Non. Tout reste sur votre appareil. Seules les demandes de lecture partent vers la borne (Netatmo) et la voiture (Hyundai / Kia / Genesis), et seulement quand vous les configurez. Si vous activez la synchronisation, le fichier est enregistré dans **votre** cloud, pas chez l’auteur de l’application. Voir les [règles de confidentialité](https://guerinbruno1-wq.github.io/suivi-recharges-ve/confidentialite.html).
 
 **Ma voiture n’est pas une Hyundai, Kia ou Genesis.**
 L’application fonctionne parfaitement en saisie manuelle : il suffit de taper le kilométrage et les %.
@@ -174,7 +190,7 @@ L’application fonctionne parfaitement en saisie manuelle : il suffit de taper 
 Saisissez les kWh affichés par votre borne ou votre compteur, ou laissez l’application les estimer.
 
 **Je change de téléphone.**
-Exportez en CSV sur l’ancien, installez l’application sur le nouveau, puis importez le CSV.
+Avec la synchronisation : installez l’application sur le nouveau téléphone et choisissez le fichier existant dans votre cloud. Sinon : exportez en CSV sur l’ancien, puis importez le CSV sur le nouveau.
 
 **Un problème, une idée ?**
 Ouvrez un ticket dans l’onglet [Issues](https://github.com/guerinbruno1-wq/suivi-recharges-ve/issues).

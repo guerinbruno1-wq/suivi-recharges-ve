@@ -39,7 +39,7 @@ Application gratuite pour <b>Android</b> et <b>Windows 11</b>, en français, san
 | 🚗 **Voiture connectée** | Hyundai, Kia, Genesis : kilométrage et % de batterie lus depuis la voiture (accès officiel du règlement européen EU Data Act). |
 | 📊 **Statistiques** | Coût, kWh, km parcourus et consommation aux 100 km, mois par mois, en graphiques et en tableau. |
 | 🚙 **Plusieurs véhicules** | Chaque voiture a ses recharges, sa capacité de batterie, sa photo et ses statistiques. |
-| 🔄 **Téléphone ↔ PC** | Export / import CSV (compatible Excel) pour retrouver ses recharges sur les deux appareils. |
+| 🔄 **Téléphone ↔ PC** | Synchronisation automatique par un fichier dans votre cloud (kDrive, OneDrive…). Export / import CSV compatible Excel. |
 
 ## 📸 Aperçu
 
@@ -76,7 +76,7 @@ Chaque version, avec ses fichiers et ses nouveautés, est sur la page **[Release
 
 ## 🔒 Vos données restent chez vous
 
-L’application ne collecte rien : vos recharges, réglages et codes d’accès restent **sur votre appareil**. Pas de compte, pas de publicité, pas de statistiques d’usage. Détails : [règles de confidentialité](https://guerinbruno1-wq.github.io/suivi-recharges-ve/confidentialite.html).
+L’application ne collecte rien : vos recharges, réglages et codes d’accès restent **sur votre appareil** (et, si vous activez la synchronisation, dans **votre** cloud). Pas de compte, pas de publicité, pas de statistiques d’usage. Détails : [règles de confidentialité](https://guerinbruno1-wq.github.io/suivi-recharges-ve/confidentialite.html).
 
 ## 💬 Une question, un problème ?
 

@@ -2,6 +2,12 @@
 
 Les fichiers de chaque version sont sur la page [Releases](https://github.com/guerinbruno1-wq/suivi-recharges-ve/releases). Utilisez de préférence la **dernière version**.
 
+## 1.2.11 — synchronisation téléphone ↔ PC
+- Les recharges, véhicules et tarifs se synchronisent **automatiquement** entre Android et Windows, par un fichier placé dans votre cloud (kDrive, OneDrive…).
+- Réglages → « Synchronisation téléphone ↔ PC » : « Créer le fichier » sur le premier appareil, « Choisir le fichier existant » sur l’autre.
+- Les recharges déjà importées par CSV sont reconnues (pas de doublons) ; les suppressions sont reportées.
+- Les codes d’accès à la borne et à la voiture restent propres à chaque appareil.
+
 ## 1.2.10 — nom générique
 - L’application s’appelle **« Suivi Recharges VE »** sur Android, comme sur Windows (avant : « Recharge Ioniq 5 »).
 - Le véhicule créé à la première installation s’appelle « Ma voiture » (à renommer et régler dans Réglages).
