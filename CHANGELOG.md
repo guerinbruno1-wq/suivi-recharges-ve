@@ -2,6 +2,10 @@
 
 Les fichiers de chaque version sont sur la page [Releases](https://github.com/guerinbruno1-wq/suivi-recharges-ve/releases). Utilisez de préférence la **dernière version**.
 
+## 1.2.12 — écran « Voiture »
+- Nouvel onglet **Voiture** (Hyundai, Kia, Genesis connectées) : % de batterie et autonomie, charge en cours et temps restant, objectifs de charge, kilométrage, position sur la carte, verrouillage et ouvrants, pression des pneus, climatisation, température extérieure, voyants d’alerte.
+- Lecture seule, par l’accès officiel (EU Data Act) : les commandes à distance restent dans l’application du constructeur.
+
 ## 1.2.11 — synchronisation téléphone ↔ PC
 - Les recharges, véhicules et tarifs se synchronisent **automatiquement** entre Android et Windows, par un fichier placé dans votre cloud (kDrive, OneDrive…).
 - Réglages → « Synchronisation téléphone ↔ PC » : « Créer le fichier » sur le premier appareil, « Choisir le fichier existant » sur l’autre.

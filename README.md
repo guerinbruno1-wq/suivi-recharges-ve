@@ -36,7 +36,7 @@ Application gratuite pour <b>Android</b> et <b>Windows 11</b>, en français, san
 | ⚡ **Suivre chaque recharge** | Kilométrage, % de batterie avant et après, à la maison ou sur borne rapide. On note au branchement, on termine quand c’est chargé. |
 | 💶 **Connaître le coût exact** | Tarif EDF heures creuses / heures pleines calculé automatiquement (répartition selon l’heure de charge), ticket des bornes rapides. |
 | 🔌 **Borne Legrand Green’Up Home** | Les kWh réellement mesurés par la borne et la durée de charge se remplissent tout seuls. |
-| 🚗 **Voiture connectée** | Hyundai, Kia, Genesis : kilométrage et % de batterie lus depuis la voiture (accès officiel du règlement européen EU Data Act). |
+| 🚗 **Voiture connectée** | Hyundai, Kia, Genesis : kilométrage et % de batterie lus depuis la voiture, et un écran « Voiture » comme Bluelink : charge, autonomie, position, verrouillage, pneus, clim, alertes (accès officiel EU Data Act, lecture seule). |
 | 📊 **Statistiques** | Coût, kWh, km parcourus et consommation aux 100 km, mois par mois, en graphiques et en tableau. |
 | 🚙 **Plusieurs véhicules** | Chaque voiture a ses recharges, sa capacité de batterie, sa photo et ses statistiques. |
 | 🔄 **Téléphone ↔ PC** | Synchronisation automatique par un fichier dans votre cloud (kDrive, OneDrive…). Export / import CSV compatible Excel. |

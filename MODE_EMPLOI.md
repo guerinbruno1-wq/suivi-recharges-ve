@@ -74,6 +74,15 @@ L’application lit le **kilométrage** et le **% de batterie** grâce à l’ac
 
 Sur le téléphone et le PC, collez la même clé dans chaque application.
 
+### 🚗 L’écran « Voiture »
+Une fois la voiture connectée, l’onglet **Voiture** affiche ce qu’elle transmet, comme l’application My Hyundai / Bluelink :
+- **batterie** : % de charge, autonomie, charge en cours et temps restant, objectifs de charge lente et rapide, kilométrage ;
+- **position** sur la carte (bouton « Voir sur la carte ») ;
+- **verrouillage** des portes, coffre et capot ;
+- **pression des pneus**, **climatisation**, température extérieure et **voyants d’alerte**.
+
+Touchez ⟳ pour actualiser. C’est une **lecture seule** : l’accès officiel ne permet pas de verrouiller, lancer la climatisation ou démarrer une charge à distance ; pour cela, gardez l’application du constructeur.
+
 ---
 
 ## 4. Connecter la borne Legrand Green’Up Home
