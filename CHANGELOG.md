@@ -2,6 +2,12 @@
 
 Les fichiers de chaque version sont sur la page [Releases](https://github.com/guerinbruno1-wq/suivi-recharges-ve/releases). Utilisez de préférence la **dernière version**.
 
+## 1.2.13 — fiabilité et sécurité
+- Synchronisation : une recharge saisie ou corrigée pendant une synchronisation n’est plus perdue.
+- Android : les codes d’accès à la borne et à la voiture ne sont plus inclus dans la sauvegarde Google ni dans le transfert vers un nouveau téléphone (à ressaisir sur un nouvel appareil).
+- Autorisation de la borne Legrand : contrôle renforcé de l’adresse de retour.
+- Export CSV : une note commençant par « = », « + », « - » ou « @ » ne peut plus être interprétée comme une formule par Excel.
+
 ## 1.2.12 — écran « Voiture »
 - Nouvel onglet **Voiture** (Hyundai, Kia, Genesis connectées) : % de batterie et autonomie, charge en cours et temps restant, objectifs de charge, kilométrage, position sur la carte, verrouillage et ouvrants, pression des pneus, climatisation, température extérieure, voyants d’alerte.
 - Lecture seule, par l’accès officiel (EU Data Act) : les commandes à distance restent dans l’application du constructeur.
