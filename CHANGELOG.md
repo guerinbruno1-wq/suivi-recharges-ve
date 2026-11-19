@@ -2,6 +2,12 @@
 
 Les fichiers de chaque version sont sur la page [Releases](https://github.com/guerinbruno1-wq/suivi-recharges-ve/releases). Utilisez de préférence la **dernière version**.
 
+## 1.2.14 — corrections de l’audit de sécurité
+- Synchronisation et import CSV : les valeurs absurdes (dates impossibles, nombres non valides, tarifs hors limites) sont ignorées ou ramenées à des valeurs normales ; un fichier altéré ne peut plus geler l’application ni empêcher de corriger ses propres recharges.
+- Calcul heures creuses / pleines plus robuste ; recalcul de toutes les recharges sans bloquer l’écran sur Android.
+- Export CSV : protection contre les formules Excel renforcée.
+- Autorisation de la borne Legrand sur PC : seule la réponse de Netatmo à la demande en cours est acceptée ; les autres requêtes sont ignorées.
+
 ## 1.2.13 — fiabilité et sécurité
 - Synchronisation : une recharge saisie ou corrigée pendant une synchronisation n’est plus perdue.
 - Android : les codes d’accès à la borne et à la voiture ne sont plus inclus dans la sauvegarde Google ni dans le transfert vers un nouveau téléphone (à ressaisir sur un nouvel appareil).
