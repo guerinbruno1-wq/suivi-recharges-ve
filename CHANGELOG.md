@@ -2,6 +2,9 @@
 
 Les fichiers de chaque version sont sur la page [Releases](https://github.com/guerinbruno1-wq/suivi-recharges-ve/releases). Utilisez de préférence la **dernière version**.
 
+## 1.2.16 — accès au verrouillage
+- Onglet Voiture : un bouton **« Verrouiller / déverrouiller »** ouvre l’application officielle du constructeur (Bluelink, Kia Connect, Genesis). Le verrouillage à distance y est sûr et toujours à jour ; l’accès officiel utilisé par l’application reste en lecture seule.
+
 ## 1.2.15 — pression des pneus
 - Onglet Voiture : si la voiture n’envoie pas la pression des pneus dans son état actuel, l’application reprend le dernier relevé de vos trajets (7 derniers jours), avec sa date.
 - La carte « Pression des pneus » s’affiche toujours, avec une explication quand la voiture ne transmet aucune valeur.

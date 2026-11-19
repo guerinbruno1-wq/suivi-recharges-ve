@@ -80,6 +80,7 @@ Une fois la voiture connectée, l’onglet **Voiture** affiche ce qu’elle tran
 - **position** sur la carte (bouton « Voir sur la carte ») ;
 - **verrouillage** des portes, coffre et capot ;
 - **pression des pneus**, **climatisation**, température extérieure et **voyants d’alerte**.
+- **verrouiller / déverrouiller** : le bouton ouvre l’application officielle du constructeur (Bluelink, Kia Connect, Genesis), où la commande à distance est sûre et toujours à jour. L’accès officiel utilisé par l’application ne permet, lui, que la lecture.
 
 Touchez ⟳ pour actualiser. C’est une **lecture seule** : l’accès officiel ne permet pas de verrouiller, lancer la climatisation ou démarrer une charge à distance ; pour cela, gardez l’application du constructeur.
 
