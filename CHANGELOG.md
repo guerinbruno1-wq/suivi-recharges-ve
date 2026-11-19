@@ -2,6 +2,10 @@
 
 Les fichiers de chaque version sont sur la page [Releases](https://github.com/guerinbruno1-wq/suivi-recharges-ve/releases). Utilisez de préférence la **dernière version**.
 
+## 1.2.15 — pression des pneus
+- Onglet Voiture : si la voiture n’envoie pas la pression des pneus dans son état actuel, l’application reprend le dernier relevé de vos trajets (7 derniers jours), avec sa date.
+- La carte « Pression des pneus » s’affiche toujours, avec une explication quand la voiture ne transmet aucune valeur.
+
 ## 1.2.14 — corrections de l’audit de sécurité
 - Synchronisation et import CSV : les valeurs absurdes (dates impossibles, nombres non valides, tarifs hors limites) sont ignorées ou ramenées à des valeurs normales ; un fichier altéré ne peut plus geler l’application ni empêcher de corriger ses propres recharges.
 - Calcul heures creuses / pleines plus robuste ; recalcul de toutes les recharges sans bloquer l’écran sur Android.
